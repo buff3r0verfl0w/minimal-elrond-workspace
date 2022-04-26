@@ -16,7 +16,7 @@ deploy() {
 }
 
 add() {
-    read -p "Enter number: " NUMBER
+    NUMBER=1
     erdpy --verbose contract call ${ADDRESS} --recall-nonce --pem=${ALICE} --gas-limit=50000000 --function="add" --arguments ${NUMBER} --send
 }
 
