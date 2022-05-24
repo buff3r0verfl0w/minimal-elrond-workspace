@@ -42,11 +42,11 @@ find ./ -type f -exec sed -i "s/adder/$PROJECT_NAME/g" {} \;
 mv adder $PROJECT_NAME
 cd $PROJECT_NAME
 
-mv tests/adder_mandos_go_test.rs tests/$PROJECT_NAME_mandos_go_test.rs
-mv tests/adder_mandos_rs_test.rs tests/$PROJECT_NAME_mandos_rs_test.rs
-mv tests/adder_test.rs tests/$PROJECT_NAME_test.rs
-mv src/adder.rs src/$PROJECT_NAME.rs
-mv mandos/adder.scen.json mandos/$PROJECT_NAME.scen.json
+mv tests/adder_mandos_go_test.rs tests/${PROJECT_NAME}_mandos_go_test.rs
+mv tests/adder_mandos_rs_test.rs tests/${PROJECT_NAME}_mandos_rs_test.rs
+mv tests/adder_test.rs tests/${PROJECT_NAME}_test.rs
+mv src/adder.rs src/${PROJECT_NAME}.rs
+mv mandos/adder.scen.json mandos/${PROJECT_NAME}.scen.json
 
 cd ..
 ```
